@@ -1,0 +1,28 @@
+/* NAVIGATION */
+
+.nav__ul {
+  height: 10svh;
+  background: var(--clr-bg-white);
+  box-shadow: var(--box-shadow);
+
+  display: grid;
+  grid-template-columns: repeat(7, 1fr) 0.3fr 0.3fr;
+
+  & .nav__text {
+    place-self: center;
+  }
+
+  & .nav__logo {
+    & a {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+  }
+
+  & li:nth-last-child(-n+2) {
+    height: 50%;
+    width: 50%;
+    place-self: center;
+  }
+}

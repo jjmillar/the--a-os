@@ -1,0 +1,47 @@
+/* VARIABLES */
+
+:root {
+  --clr-nav-text: gray;
+  --clr-bg-white: #fffcf2;
+  --box-shadow: 0px 2px 8px 0px rgba(117,117,117,0.84);
+}
+
+/* CSS RESET */
+*, *::before, *::after {
+  box-sizing: border-box;
+  position: relative;
+  min-width: 0;
+  /*outline: 1px solid lime; /*para debugear layouts*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+h1, h2, h3, h4 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+li {
+  list-style: none;
+}
+
+a, a:visited, a:link, a:active {
+  color: var(--clr-nav-text);
+  text-decoration: none;
+}
